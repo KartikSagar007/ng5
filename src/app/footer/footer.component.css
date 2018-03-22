@@ -1,0 +1,18 @@
+/* footer{
+    text-align: right;
+    padding-top: 0.5rem;
+    padding-bottom: 0.25rem;
+    border-top: 2px solid #afafaf;
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+} */
+footer{
+    text-align: right;
+    padding-top: 0.5rem;
+    padding-bottom: 0.25rem;
+    border-top: 2px solid #afafaf;
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+}

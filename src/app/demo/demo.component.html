@@ -1,0 +1,8 @@
+<div class="panel panel-default aPanel">
+  <div class="panel-body" >
+    <a href="" [ngClass]="{'adisabled': !usable}" (click)="doOperation($event)">
+      This is an achor element
+    </a>
+    <button type="button" (click)="toggleAnchor()" class="btn btn-sm btn-success pull-right">Toggle Anchor</button>
+  </div>
+</div>
