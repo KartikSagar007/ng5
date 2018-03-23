@@ -5,3 +5,9 @@
 app-root{
     min-height: 100%;
 }
+.body-container{
+    margin-top: 4rem;
+}
+.r-aside{
+ padding-right: 0;   
+}

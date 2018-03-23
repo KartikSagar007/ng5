@@ -10,11 +10,16 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { DemoComponent } from './demo/demo.component';
+import { LoginComponent } from './login/login.component';
 
 const appRoutes: Routes = [
   {
     path: '',
     component: HomeComponent
+  },
+  {
+    path: 'login',
+    component: LoginComponent
   },
   {
     path: 'dashboard',
@@ -38,7 +43,8 @@ const appRoutes: Routes = [
     HeaderComponent,
     FooterComponent,
     NotfoundComponent,
-    DemoComponent
+    DemoComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
