@@ -9,5 +9,18 @@ app-root{
     margin-top: 4rem;
 }
 .r-aside{
- padding-right: 0;   
+    border-left: 2px solid grey; 
+}
+.l-aside{
+    border-right: 2px solid grey; 
+}
+@media(max-width: 768px){
+    .body-container{
+        margin-top: 7rem;
+    }
+}
+@media(max-width: 425px){
+    .body-container{
+        margin-top: 3.4rem;
+    }
 }

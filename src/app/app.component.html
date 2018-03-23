@@ -1,14 +1,16 @@
 <app-header></app-header>
 <div class="body-container">
-    <div class="row">
-        <div class="col-md-3 l-aside">
-            <aside>Left</aside>
-        </div>
-        <div class="col-md-6">
-            <router-outlet></router-outlet>
-        </div>
-        <div class="col-md-3 r-aside">
-            <aside>Right</aside>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-0 col-xs-0 l-aside">
+                <aside>Left</aside>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 ">
+                <router-outlet></router-outlet>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-0 col-xs-0 r-aside">
+                <aside>Right</aside>
+            </div>
         </div>
     </div>
 </div>
