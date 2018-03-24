@@ -11,6 +11,9 @@ import { FooterComponent } from './footer/footer.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { DemoComponent } from './demo/demo.component';
 import { LoginComponent } from './login/login.component';
+import { OneWayComponent } from './one-way/one-way.component';
+import { TwoWayComponent } from './two-way/two-way.component';
+import { UserLoginService } from './user-login.service';
 
 const appRoutes: Routes = [
   {
@@ -30,6 +33,14 @@ const appRoutes: Routes = [
     component: DemoComponent
   },
   {
+    path: 'one-way',
+    component: OneWayComponent
+  },
+  {
+    path: 'two-way',
+    component: TwoWayComponent
+  },
+  {
     path: '**',
     component: NotfoundComponent
   }
@@ -44,14 +55,16 @@ const appRoutes: Routes = [
     FooterComponent,
     NotfoundComponent,
     DemoComponent,
-    LoginComponent
+    LoginComponent,
+    OneWayComponent,
+    TwoWayComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
     NgbModule.forRoot()
   ],
-  providers: [],
+  providers: [ UserLoginService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

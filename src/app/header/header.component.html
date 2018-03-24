@@ -8,22 +8,22 @@
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" routerLink="">Home
+                <a class="nav-link" routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home
                     <span class="sr-only">(current)</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" routerLink="/dashboard">Dashboard</a>
+                <a class="nav-link" routerLink="/dashboard" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Dashboard</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link disabled" routerLink="">Github</a>
+                <a class="nav-link disabled" routerLink="github" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Github</a>
             </li>            
             <li class="nav-item dropdown" ngbDropdown>
                 <a class="nav-link dropdown-toggle" id="dropdown01" ngbDropdownToggle>All Demo</a>
                 <div class="dropdown-menu" aria-labelledby="dropdown01" ngbDropdownMenu>
-                    <a class="dropdown-item" routerLink="/demo">anchor disabled</a>
-                    <a class="dropdown-item" routerLink="">one-way databinding</a>
-                    <a class="dropdown-item" routerLink="">two-way databinding</a>
+                    <a class="dropdown-item" routerLink="/demo" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">anchor disabled</a>
+                    <a class="dropdown-item" routerLink="/one-way" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">one-way databinding</a>
+                    <a class="dropdown-item" routerLink="/two-way" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">two-way databinding</a>
                 </div>
             </li>
         </ul>
@@ -32,7 +32,7 @@
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
         <div class="login-link">
-            <a routerLink="login">Login</a>
+            <a routerLink="login" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Login</a>
         </div>
     </div>
 </nav>
