@@ -11,6 +11,7 @@ export class UserComponent implements OnInit {
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
+    console.log(this.route.snapshot.params);
     this.name = this.route.snapshot.params.name;
   }
 

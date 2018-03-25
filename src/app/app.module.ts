@@ -43,13 +43,27 @@ const appRoutes: Routes = [
     path: 'two-way',
     component: TwoWayComponent
   },
+  // {
+  //   path: 'user/:name',
+  //   component: UserComponent
+  // },
+  // {
+  //   path: 'user/:name/:id',
+  //   component: UserComponent
+  // },
   {
-    path: 'users/:name',
-    component: UserComponent
-  },
-  {
-    path: 'users/:name/:id',
-    component: UserComponent
+    path: 'user',
+    pathMatch: 'prefix', //prefix is by default change it to full
+    children: [
+      {
+        path: ':name',
+        component: UserComponent
+      },
+      {
+        path: ':name/:id',
+        component: UserComponent
+      }
+    ]
   },
   {
     path: '**',               //any routes other than above and its order should be last always
