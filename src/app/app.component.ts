@@ -8,4 +8,5 @@ import { Routes } from '@angular/router';
 })
 export class AppComponent {
   title = 'app';
+  headerName = "KartikSagar";
 }
