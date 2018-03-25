@@ -15,6 +15,7 @@ import { OneWayComponent } from './one-way/one-way.component';
 import { TwoWayComponent } from './two-way/two-way.component';
 import { UserLoginService } from './user-login.service';
 import { AuthguardGuard } from './authguard.guard';
+import { UserComponent } from './user/user.component';
 
 const appRoutes: Routes = [
   {
@@ -43,7 +44,15 @@ const appRoutes: Routes = [
     component: TwoWayComponent
   },
   {
-    path: '**',
+    path: 'users/:name',
+    component: UserComponent
+  },
+  {
+    path: 'users/:name/:id',
+    component: UserComponent
+  },
+  {
+    path: '**',               //any routes other than above and its order should be last always
     component: NotfoundComponent
   }
 ]
@@ -59,7 +68,8 @@ const appRoutes: Routes = [
     DemoComponent,
     LoginComponent,
     OneWayComponent,
-    TwoWayComponent
+    TwoWayComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,

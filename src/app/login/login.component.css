@@ -26,6 +26,7 @@ div.input input[type="submit"]{
 }
 div.input input[type="submit"]:hover{
     background-color: #95bb88;
+    color: #fff;
 }
 div.input input[type="button"]{
     cursor: pointer;
@@ -33,6 +34,7 @@ div.input input[type="button"]{
 }
 div.input input[type="button"]:hover{
     background-color: #95bb88;
+    color: #fff;
 }
 div.input{
     margin-top: 2rem;
