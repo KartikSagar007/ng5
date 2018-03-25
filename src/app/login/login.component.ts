@@ -20,6 +20,7 @@ export class LoginComponent implements OnInit {
   loginUser(e) {
     var username = e.target.elements[0].value;
     var password = e.target.elements[1].value;
+    e.preventDefault();
     console.log(username, password);
     if (username == 'sagar' && password == 'sagar') {
       this.user.setUserLoggedIn(username);

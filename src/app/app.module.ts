@@ -14,6 +14,7 @@ import { LoginComponent } from './login/login.component';
 import { OneWayComponent } from './one-way/one-way.component';
 import { TwoWayComponent } from './two-way/two-way.component';
 import { UserLoginService } from './user-login.service';
+import { AuthguardGuard } from './authguard.guard';
 
 const appRoutes: Routes = [
   {
@@ -26,6 +27,7 @@ const appRoutes: Routes = [
   },
   {
     path: 'dashboard',
+    canActivate: [AuthguardGuard],
     component: DashboardComponent
   },
   {
@@ -64,7 +66,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     NgbModule.forRoot()
   ],
-  providers: [ UserLoginService ],
+  providers: [ UserLoginService, AuthguardGuard ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -18,9 +18,10 @@ export class DemoComponent implements OnInit {
   }
   doOperation(e) {
     if (this.usable !== true) {
-      // e.preventDefault();
+      e.preventDefault();
     }
     else {
+      e.preventDefault();
       alert("Anchor element is enabled");
     }
   }

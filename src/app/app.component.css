@@ -6,7 +6,7 @@ app-root{
     min-height: 100%;
 }
 .body-container{
-    margin-top: 4rem;
+    margin-top: 3.5rem;
 }
 .r-aside{
     border-left: 2px solid grey; 
@@ -14,13 +14,13 @@ app-root{
 .l-aside{
     border-right: 2px solid grey; 
 }
-@media(max-width: 768px){
-    .body-container{
-        margin-top: 7rem;
-    }
-}
 @media(max-width: 425px){
     .body-container{
         margin-top: 3.4rem;
+    }
+}
+@media(width:768px){
+    .body-container[_ngcontent-c0] {
+        margin-top: 4.4rem;
     }
 }

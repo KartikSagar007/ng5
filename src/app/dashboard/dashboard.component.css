@@ -1,0 +1,17 @@
+header {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    border-bottom: 2px solid #eee;
+}
+
+.timer {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background: darkslategrey;
+}
+
+.green {
+    color: #00ff00;
+}
