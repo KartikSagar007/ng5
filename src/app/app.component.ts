@@ -9,4 +9,7 @@ import { Routes } from '@angular/router';
 export class AppComponent {
   title = 'app';
   headerName = "KartikSagar";
+  awesomeMethod(ev){
+    console.log(ev,": text from CHILD");
+  }
 }
